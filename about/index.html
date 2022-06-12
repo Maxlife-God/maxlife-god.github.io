@@ -290,9 +290,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -308,21 +306,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">10</a></span>
+    <span class="count"><a href="/">52</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">2</a></span>
+    <span class="count"><a href="/tags">8</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -338,21 +336,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">10</a></span>
+    <span class="count"><a href="/">52</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">5</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">2</a></span>
+    <span class="count"><a href="/tags">8</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -488,7 +486,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,10,0,0,0,0,0,0],
+                data: [0,0,0,0,0,0,12,5,6,1,12,10,6],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -530,7 +528,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"日语","value":10}],
+                data: [{"name":"Handsome","value":1},{"name":"JavaScript","value":2},{"name":"Minecraft","value":2},{"name":"N5","value":46},{"name":"Android","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -554,7 +552,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["日语","教程"]
+                data: ["教程","日语","JS","编程","MC","CSS","资讯","Android"]
             }
         ],
         yAxis: [
@@ -567,7 +565,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [10,10],
+                data: [49,46,2,2,2,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{

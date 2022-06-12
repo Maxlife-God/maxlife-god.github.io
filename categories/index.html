@@ -283,9 +283,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -306,11 +304,47 @@
                 
                 
                 
-                <a href="/categories/%E6%97%A5%E8%AF%AD/" title="日语: 10">
+                <a href="/categories/Handsome/" title="Handsome: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">日语
-                        <span class="tag-length">10</span>
+                            style="background-color: #F9EBEA;">Handsome
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/JavaScript/" title="JavaScript: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">JavaScript
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Minecraft/" title="Minecraft: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">Minecraft
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/N5/" title="N5: 46">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">N5
+                        <span class="tag-length">46</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Android/" title="Android: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FEF9E7;">Android
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -357,7 +391,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"日语","max":20}],
+            indicator: [{"name":"Handsome","max":47},{"name":"JavaScript","max":47},{"name":"Minecraft","max":47},{"name":"N5","max":47},{"name":"Android","max":47}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -368,7 +402,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [10],
+                    value : [1,2,2,46,1],
                     name : '文章分类数量'
                 }
             ]
